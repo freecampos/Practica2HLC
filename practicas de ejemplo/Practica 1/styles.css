@@ -100,7 +100,19 @@ html, body{
 
 #comando td{
 	font: bold 90% monospace;
+}
 
+#indice{
+	position: fixed;
+}
+
+#Introduction{
+	position: relative;
+	top: 0px;
+}
+
+#FirstProject{
+	position: relative;
 }
 
 /*esto solo afecta a las filas pares*/

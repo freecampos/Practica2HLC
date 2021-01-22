@@ -28,53 +28,79 @@
 	
 	<section id="content">
 		
+		<section id="Indice">
+			<h3>Indice</h3>
+			<ul >
+				<li><a href="#FirstPoject">First Poject</a></li>
 
-		<h2>How to use NodeJS in VSCs</h2>
-		<p id="introduction">
-			Node.js is a platform for building fast and scalable server applications using JavaScript. Node.js is the runtime and npm is the Package Manager for Node.js modules.
-			<br><br>
-			Visual Studio Code has support for the JavaScript and TypeScript languages out-of-the-box as well as Node.js debugging. However, to run a Node.js application, you will need to install the Node.js runtime on your machine.
-			<br><br>
-			To get started in this walkthrough, <a href="https://nodejs.org/en/download/">install Node.js for your platform.</a> The Node Package Manager is included in the Node.js distribution. You'll need to open a new terminal (command prompt) for the node and npm command-line tools to be on your PATH.
-		</p>
-	
-		<h3>First Poject</h3>
-		<p>
-			Let's get started by creating the simplest Node.js application, "Hello World".
-			<br><br>
-			Create an empty folder called "hello", navigate into and open VS Code:			
-		</p>
+			</ul>
+		</section>
 
-		<table class="default" id="comando">
-			<tr>
-				<td>mkdir hello <br> cd hello <br> code.</td>
-			</tr>
-		</table>
+		<section id="Introduction">
+			<h2>How to use NodeJS in VSCs</h2>
+			<p>
+				Node.js is a platform for building fast and scalable server applications using JavaScript. Node.js is the runtime and npm is the Package Manager for Node.js modules.
+				<br><br>
+				Visual Studio Code has support for the JavaScript and TypeScript languages out-of-the-box as well as Node.js debugging. However, to run a Node.js application, you will need to install the Node.js runtime on your machine.
+				<br><br>
+				To get started in this walkthrough, <a href="https://nodejs.org/en/download/">install Node.js for your platform.</a> The Node Package Manager is included in the Node.js distribution. You'll need to open a new terminal (command prompt) for the node and npm command-line tools to be on your PATH.
+			</p>
+		</section>
 
-		<p>
-			From the File Explorer toolbar, press the New File button:
-		</p>
+		<section id="FirstPoject">
+			<h3>First Poject</h3>
+			<p>
+				Let's get started by creating the simplest Node.js application, "Hello World".
+				<br><br>
+				Create an empty folder called "hello", navigate into and open VS Code:			
+			</p>
 
-		<img src="imagenes/NodeJS in VSC/toolbar-new-file.png">		
+			<table class="default" id="comando">
+				<tr>
+					<td>mkdir hello <br> cd hello <br> code.</td>
+				</tr>
+			</table>
 
-		<p>
-			and name the file app.js:
-		</p>
+			<p>
+				From the File Explorer toolbar, press the New File button:
+			</p>
 
-		<img src="imagenes/NodeJS in VSC/app-js-file-created.png">	
+			<img src="imagenes/NodeJS in VSC/toolbar-new-file.png">		
 
-		<p>
-			By using the .js file extension, VS Code interprets this file as JavaScript and will evaluate the contents with the JavaScript language service. Refer to the VS Code JavaScript language topic to learn more about JavaScript support.
-			<br><br>
-			Create a simple string variable in app.js and send the contents of the string to the console:
-		</p>
+			<p>
+				and name the file app.js:
+			</p>
 
-		<table class="default" id="comando">
-			<tr>
-				<td>var msg = 'Hello World'; <br> console.log(msg);</td>
-			</tr>
-		</table>
+			<img src="imagenes/NodeJS in VSC/app-js-file-created.png">	
 
+			<p>
+				By using the .js file extension, VS Code interprets this file as JavaScript and will evaluate the contents with the JavaScript language service. Refer to the VS Code JavaScript language topic to learn more about JavaScript support.
+				<br><br>
+				Create a simple string variable in app.js and send the contents of the string to the console:
+			</p>
+
+			<table class="default" id="comando">
+				<tr>
+					<td>var msg = 'Hello World'; <br> console.log(msg);</td>
+				</tr>
+			</table>
+
+			<p>
+				Note that when you typed console. <a href="https://code.visualstudio.com/docs/editor/intellisense">IntelliSense</a> on the console object was automatically presented to you.
+			</p>
+
+			<img src="imagenes/NodeJS in VSC/consoleintellisense.png">
+
+			<p>
+				Also notice that VS Code knows that msg is a string based on the initialization to 'Hello World'. If you type msg. you'll see IntelliSense showing all of the string functions available on msg.
+			</p>
+
+			<img src="imagenes/NodeJS in VSC/stringintellisense.png">
+
+			<p>
+				After experimenting with IntelliSense, revert any extra changes from the source code example above and save the file (Ctrl+S).
+			</p>
+		</section>
 	</section>
 	<aside>
 		<footer id="final">
