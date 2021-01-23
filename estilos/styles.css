@@ -142,6 +142,156 @@ code {
 	text-decoration: none; /*Quita la barra del texto*/
 }
 
+	/*	Daniel Campos Sánchez	*/
+/* Dar tamaño de ancho a la pagina y centrar.*/
+#header-framework, #content-framework{
+	width: 95%;
+	max-width: 1000px;
+	margin: auto; /*Centrar todo*/
+}
+
+/* Parrafos con el contenido.*/
+.content-front p{
+	margin-bottom: 20px; /*Espacio entre parrafos*/
+}
+
+/* Menu.*/
+#header-framework nav {
+	background: #3498db;
+	margin-bottom: 10px;
+}
+
+	#header-framework nav ul{
+		list-style: none;
+		overflow: hidden;
+	}
+
+		#header-framework nav ul li{
+			float: left; /*Cada uno a la derecha*/
+		}
+
+			#header-framework nav ul li a{
+				display: block;
+				padding: 20px;
+				color: #fff;
+				text-decoration: none;
+			}
+				#header-framework nav ul li a:hover{
+					background: #2980b9;
+				}
+
+.menu-fixed{
+	position: fixed; /*Menu fijo en pantalla*/
+	z-index: 1000; /*Capa numero mil*/
+	top: 0; /*Va a estar pegado en la parte superior*/
+	width: 100%;
+	max-width: 1000px;
+	box-shadow: 0px 4px 3px rgba(0,0,0,.5);
+	opacity: .5;
+}
+
+.menu-fixed ul li a{
+	padding: 10px;
+}
+
+	/*	Framework js 	*/
+
+/*Contenido con la imagen y el parrafo*/
+#content-framework h2{
+	margin: 0 20px;
+	font-size: 41px;
+	font-weight: 900;
+}
+
+#front-end h2{
+	color: #74c6d2;
+}
+
+#back-end h2{
+	color: #006b74;
+}
+
+#image-front img {
+	float: left;
+	width: 35%;
+}
+
+#image-back img {
+	float: left;
+	width: 35%;
+}
+
+#galery img {
+	width: 100%;
+}
+
+.linea {
+  border-top: 1px solid black;
+  height: 2px;
+  max-width: 200px;
+  padding: 0;
+  margin: 20px auto 0 auto;
+}
+
+#content-front {
+	float: left; /*Hacemos flotar la imagen a la izq*/
+	width: 60%; /*Le damos un 40% a cada contenido (hacemos una ocupación del 80% de la pantalla)*/
+}
+
+#content-back {
+	float: right; /*Hacemos flotar la imagen a la izq*/
+	width: 60%; /*Le damos un 40% a cada contenido (hacemos una ocupación del 80% de la pantalla)*/
+}
+
+#front-end p, #back-end p{
+	margin: 20px 20px; /*Tiene margen de 20 pixeles a cada lado del contenido*/
+}
+
+	/*	Framework WEB	*/
+.logotipo{
+	width: 150px;
+}
+
+.container-columns img{
+	margin: 20px;
+	width: 200px;
+	height: 200px;
+}
+
+.banner-video{
+	background-image: url("../imagenes/bootstrap/imagen-fondo.png");
+	padding: 150px 0;
+	margin: 20px;
+	position: relative;
+	text-align: center;
+}
+
+.banner-video img{
+	width: 80px;
+	height: 80px;
+	position: relative;
+}
+
+/*Para el formulario de Contácteme*/
+/*Solo lo aplicamos a los type text, email y date*/
+#content-framework form {
+	clear: both; /*Que no haya nada ni a la izq ni a la derecha*/
+}
+#content-framework form [type="text"], #content-framework form [type="email"], #content-framework form [type="date"], #content-framework form textarea {
+	display: block;
+	width: 50%; /*Ancho de los elementos hasta la mitad de la pantalla*/
+	margin-bottom: 10px;
+	padding: 10px; /*Separación entre el texto y la linea del input*/
+	border: 0; /*Le quitamos el borde*/
+	background-color: #efefef;
+	color: #666666;
+}
+
+#content-framework form ul{
+	list-style: none;
+}
+
+/*	Pie de pagina.	*/
 aside {
 	position: fixed;
 	background-color: black;
