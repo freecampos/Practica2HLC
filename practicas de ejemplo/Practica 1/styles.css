@@ -102,18 +102,19 @@ html, body{
 	font: bold 90% monospace;
 }
 
-#indice{
-	position: fixed;
+
+#indice {
+	float: left;
 }
 
-#Introduction{
-	position: relative;
-	top: 0px;
-}
+/*#Introduction{
+	position: absolute;
+	left: 30%;
+}*/
 
-#FirstProject{
-	position: relative;
-}
+/*#FirstProject{
+	float: right;	
+}*/
 
 /*esto solo afecta a las filas pares*/
 /* even -> pared, odd -> impares
