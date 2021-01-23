@@ -291,6 +291,11 @@ code {
 	list-style: none;
 }
 
+#boton{
+	margin: 20px 33.3%;
+	width: 33.3%;
+}
+
 /*	Pie de pagina.	*/
 aside {
 	position: fixed;
