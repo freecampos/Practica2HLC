@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Contáctame</title>
+		<link rel="stylesheet" type="text/css" href="../estilos/styles.css">
+		<script type="text/javascript" src="../scripts/contact.js"></script>
+	</head>
+	<body>
+		<div id = "header-framework">
+			<h1>Contáctame</h1>
+			<nav class="menu">
+				<ul>
+					<li><a href="VisualStudioCode.html">Inicio</a></li>
+					<li><a href="VSCconGit.html">VSC con Git</a></li>
+					<li><a href="Nodejs in VSC.html">NodeJS</a></li>
+					<li><a href="developers-tools.html">Developers Tools</a></li>
+					<li><a href="framework-js.html">Framework JS</a></li>
+					<li><a href="framework-web.html">Framework Web</a></li>
+					<li><a href="contact.html">Contáctame</a></li>
+				</ul>
+			</nav>
+		</div>
+		<section id="content-framework">
+			<p>El objetivo de este formulario es conocer más a las personas que visitan esta página y están interesados en enviar datos personales para próximos proyectos (pequeña presentación antes de un curriculum).</p>
+			<form>
+				<label form="nombre-contacto">Nombre</label>
+				<input type="text" id="nombre-contacto" name="nombre" />
+				
+				<label form="apellidos-contacto">Apellidos</label>
+				<input type="text" id="apellidos-contacto" name="apellidos" />
+
+				<label form="email-contacto">Email</label>
+				<input type="email" id="email-contacto" name="email" />
+				
+				<label form="telefono-contacto">Teléfono</label>
+				<input type="text" id="telefono-contacto" name="telefono">
+
+				<label form="fecha-nac">Fecha nacimiento</label>
+				<input type="date" id="fecha-nac" name="fecha">
+
+				<label form="conocimientos-contacto">Lenguajes que hayas utilizado y sepas de ellas:</label>
+				<ul>
+					<li><input type="checkbox" id="cb-java" name="java" value="java"><strong>Java</strong></li>
+					<li><input type="checkbox" id="cb-db" name="db" value="db"><strong>Base de datos (SQL)</strong></li>
+					<li><input type="checkbox" id="cb-python" name="python" value="python"><strong>Python</strong></li>
+					<li><input type="checkbox" id="cb-html" name="html" value="html"><strong>HTML</strong></li>
+					<li><input type="checkbox" id="cb-css" name="css" value="css"><strong>CSS</strong></li>
+				</ul>
+
+				<button onClick="comprobar_blancos()">Enviar información</button>
+
+				<!--
+				<input type="submit" name="Enviar" onClick="comprobar_blancos()" />
+			-->
+			</form>
+		</section>
+	</body>
+</html>
