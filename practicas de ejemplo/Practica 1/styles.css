@@ -85,7 +85,7 @@ html, body{
 }
 
 /*EDITADO POR ANTONIO JOSE GONZALEZ PEREZ*/
-
+/*-----------------------------------------------*/
 #content{
 	width: 600px;
 	text-align: left;
@@ -95,18 +95,13 @@ html, body{
 	width: 600px;
 	height: 50px;
 	border: black 1px solid;
-	border-radius: 5px;
-}
-
-#comando td{
+	border-radius: 1px;
 	font: bold 90% monospace;
 }
 
-
-#indice {
-	float: left;
+#Indice {
+	list-style-type: none;
 }
-
 /*#Introduction{
 	position: absolute;
 	left: 30%;
@@ -115,6 +110,8 @@ html, body{
 /*#FirstProject{
 	float: right;	
 }*/
+
+/*-----------------------------------------------*/
 
 /*esto solo afecta a las filas pares*/
 /* even -> pared, odd -> impares
