@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+html, body{
+	margin: 0px; /*Unir las divisiones a la página web, si no se pone, queda una pequeña separación.*/
+	width: 100%; /*Ancho usado en la pantalla*/
+	min-width: 600px;
+	max-width: 2000px;
+
+	font-family: 'Raleway';
+	font-style: normal;
+  	font-weight: 400;
+}
+
+/*# -> hace referencia al identificar usado en los .html*/
+#header {
+	background-color: #000000;
+	color: white; /*Color de la letra*/
+	padding: 10px 20px; /*Damos margenes a los textos dentro del id header*/
+	border-radius: 20px; /*Bordeado del Head*/
+	text-align: center; /*Alinemaos al centro el texto*/
+}
+
+#header h1 {
+	margin: 0; /*Solo quitamos la separación 'padding' al h1 del #header*/
+}
+
+#header ul{
+	list-style: none; /*Quitamos los puntos*/
+	padding: 0; /*Quitamos el padding*/
+	overflow: hidden; /*Ahora el elemento padre, coge correctamente las propiedades del elemento hijo*/
+}
+
+#header li{
+	float: left; /*Flotan los elementos a la izquierda*/
+	margin: 0 15px 0 0; /*Arriba - Derecha - Abajo - Izquierda, solo le damos margen a la derecha de cada elemento*/
+}
+
+.autor {
+	justify-content: center;
+	display: inline-block;
+	padding: 0 20px 0 0;
+}
+
+#content {
+	padding: 20px; /*Le damos borde al contenido*/
+}
+
+/*Etiquetas del menu*/
+#header ul a{
+	color: #ffffff; /*Color blanco*/
+	text-decoration: none; /*Quita la barra del texto*/
+}
+
+/*Color del texto del menu cuando se pasa el mouse por encima*/
+#header ul a:hover{
+	color: #ff9999;
+}
+
+/*Para el formulario de Contácteme*/
+/*Solo lo aplicamos a los type text y email*/
+
+#content form {
+	clear: both; /*Que no haya nada ni a la izq ni a la derecha*/
+}
+#content form [type="text"], #content form [type="email"],#content form textarea {
+	display: block;
+	width: 50%; /*Ancho de los elementos hasta la mitad de la pantalla*/
+	margin-bottom: 10px;
+	padding: 10px; /*Separación entre el texto y la linea del input*/
+	border: 0; /*Le quitamos el borde*/
+	background-color: #efefef;
+	color: #666666;
+}
+
+/*Propiedades de la tabla*/
+/content table{
+	background-color: #ccc;
+	text-align: center;
+}
+
+/*EDITADO POR ANTONIO JOSE GONZALEZ PEREZ*/
+
+#content{
+	width: 600px;
+	text-align: left;
+}
+/*propiedades de la tabla donde va el codigo*/
+#comando{
+	width: 600px;
+	height: 50px;
+	border: black 1px solid;
+	border-radius: 5px;
+}
+
+#comando td{
+	font: bold 90% monospace;
+}
+
+#indice{
+	position: fixed;
+}
+
+#Introduction{
+	position: relative;
+	top: 0px;
+}
+
+#FirstProject{
+	position: relative;
+}
+
+/*esto solo afecta a las filas pares*/
+/* even -> pared, odd -> impares
+#content table tr:nth-child(even){
+	background-color: #efefef;
+}
+
+#content table tr:nth-child(odd){
+	background-color: #D18B00;
+}
+
+/* '*' ->Afecta a todos los elementos del tr, '>' ->  
+#content table tr > * {
+	padding: 3px 10px;
+	border-bottom: 1px solid #666;
+}*/
+
+/*EDITADO POR ANA SOUSA CABANILLA*/
+code {
+	background-color: #EAECEE;
+	color: #1C2833;
+}
+
+#content a{
+	color: blue;
+	text-decoration: none; /*Quita la barra del texto*/
+}
+
+aside {
+	position: fixed;
+	background-color: black;
+	color: white;
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	bottom: 0;
+	left: 0;
+}
+
+footer a{
+	color: #ffffff; /*Color blanco*/
+	text-decoration: none; /*Quita la barra del texto*/
+}
+
+footer a:hover{
+	color: #ff9999;
+}
