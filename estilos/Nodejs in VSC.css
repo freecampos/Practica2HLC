@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+body li
+{
+	list-style: none;
+}
+
+#header ul a{
+	color: #ffffff; /*Color blanco*/
+	text-decoration: none; /*Quita la barra del texto*/
+}
+
+#header ul a:hover{
+	color: #ff9999;
+}
+
+#header {
+	background-color: #000000;
+	color: white; /*Color de la letra*/
+	padding: 10px 20px; /*Damos margenes a los textos dentro del id header*/
+	border-radius: 20px; /*Bordeado del Head*/
+	text-align: center; /*Alinemaos al centro el texto*/
+}
+
+#header h1 {
+	margin: 0; /*Solo quitamos la separación 'padding' al h1 del #header*/
+}
+
+#header ul{
+	list-style: none; /*Quitamos los puntos*/
+	padding: 0; /*Quitamos el padding*/
+	overflow: hidden; /*Ahora el elemento padre, coge correctamente las propiedades del elemento hijo*/
+}
+
+#header li{
+	float: left; /*Flotan los elementos a la izquierda*/
+	margin: 0 15px 0 0; /*Arriba - Derecha - Abajo - Izquierda, solo le damos margen a la derecha de cada elemento*/
+}
+
+.autor {
+	justify-content: center;
+	display: inline-block;
+	padding: 0 20px 0 0;
+}
+
+#content{
+	width: 600px;
+	text-align: left;
+}
+/*propiedades de la tabla donde va el codigo*/
+#comando{
+	width: 600px;
+	height: 50px;
+	border: black 1px solid;
+	border-radius: 5px;
+}
+
+#comando td{
+	font: bold 90% monospace;
+}
+
+#Indice{
+	position: sticky;
+	top: 0%;
+	width: 200px;
+	height: 250px;
+	border: black 1px solid;
+	border-radius: 5px;
+	margin: 20px;	
+	display: inline-block;
+}
+
+#Introduction{
+	position: relative;
+	left: 50%;
+}
+
+#FirstPoject{
+	position: relative;
+	left: 50%;	
+}
+
+#RunProject{
+	position: relative;
+	left: 50%;
+}
+
+#IntegratedTerminal{
+	position: relative;
+	left: 50%;
+}
+
+#Debugging{
+	position: relative;
+	left: 50%;
+}
+
+#Express{
+	position: relative;
+	left: 50%;
+}
+
+#GreatCode{
+	position: relative;
+	left: 50%;
+}
+
+#DebugExpress{
+	position: relative;
+	left: 50%;	
+}
