@@ -1,4 +1,4 @@
-@font-face {
+﻿@font-face {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
@@ -316,4 +316,26 @@ footer a{
 
 footer a:hover{
 	color: #ff9999;
+}
+
+//Inma
+@media screen and (max-width: 900px) {
+	h1 {
+		font-size: 40px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	h2{
+		font-size: 25px;
+	}
+        h3
+	{
+		font-size: 20px;
+	}
+
+	p {
+		font-weight: normal;
+	}
+
 }
