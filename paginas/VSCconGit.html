@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
+	<meta charset="utf-8"/>
 	<title>Visual Studio Code con Git</title>
-	<link rel="stylesheet" type="text/css" href="../estilos/styles.css">
-	<link rel="shortcut icon" href="../imagenes/logo.jpg" />
+	<link rel="stylesheet" type="text/css" href="../estilos/styles.css"/>
+	<link rel="shortcut icon" href="../imagenes/logo.jpg"/>
 </head>
 <body>
 	<header id="header">
@@ -16,22 +16,25 @@
 		
 		<nav>
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="">Visual Studio Code para JavaScript</a></li>
-				<li><a href="VSCconGit.html">Visual Studio Code con Git</a></li>
-				<li><a href="Nodejs in VSC.html">NodeJS en Visual Studio Code</a></li>
-				<li><a href="">Developers tools de Firefox y Chrome</a></li>
-				<li><a href="">Frameworks JS</a></li>
-				<li><a href="">Bootstrap</a></li>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="VisualStudioCode.html">Visual Studio Code para JavaScript</a></li>
+				<li><a href="VSCconGit.html">VSC con Git</a></li>
+				<li><a href="Nodejs in VSC.html">NodeJS en VSC</a></li>
+				<li><a href="DevelopersTools.html">Developers tools</a></li>
+				<li><a href="framework-js.html">Framework JS</a></li>
+				<li><a href="framework-web.html">Framework Web</a></li>
+				<li><a href="contact.html">Contáctame</a></li>
 			</ul>
 		</nav>   
             
 	</header>
 	
 	<section id="content">
-		<h2>Cómo usar la integración Git en Visual Studio Code</h3>
+		<h2>Cómo usar la integración Git en Visual Studio Code</h2>
 		<article>
-			<h3>Introducción</h3>
+			<header>
+				<h3>Introducción</h3>
+			</header>
 			<p>
 				Visual Studio Code (VS Code) se ha convertido en uno de los editores más populares que existen
 				para el desarrollo web. Ha conseguido tanta popularidad gracias a sus muchas funciones integradas,
@@ -40,20 +43,23 @@
 				<br/><br/>
 				En este tutorial, explorará usar la Integración del Control de código fuente con VS Code con Git.
 			</p>
-			<h3>
-				Requisitos previos
-			</h3>
+		</article>
+		<article>
+			<header>
+				<h3>Requisitos previos</h3>
+			</header>
 			<p>
 				Para completar este tutorial, necesitará lo siguiente:
-				<ul>
-					<li>Git instalado en su máquina.
-					</li>
-					<li>
-						La versión más reciente de Visual Studio Code instalada en su equipo.
-					</li>
-				</ul>
 			</p>
-			<h3>Paso 1: Familiarizarse con la pestaña Control de código fuente</h3>
+			<ul>
+				<li>Git instalado en su máquina.</li>
+				<li>La versión más reciente de Visual Studio Code instalada en su equipo.</li>
+			</ul>
+		</article>
+		<article>
+			<header>
+				<h3>Paso 1: Familiarizarse con la pestaña Control de código fuente</h3>
+			</header>
 			<p>
 				Lo primero que debe hacer para aprovechar la integración del Control de código fuente es
 				iniciar un proyecto como repositorio Git.
@@ -81,13 +87,13 @@
 				(el icono parece una <strong>brecha en la carretera</strong>) en el panel izquierdo:
 			</p>
 			<figure>
-                <img src="../imagenes/VSCconGit/1.png"/>
+                <img src="../imagenes/VSCconGit/1.png" alt="Icono brecha en la carretera"/>
             </figure>
 			<p>
 				A continuación, seleccione <strong>Abrir carpeta</strong>:
 			</p>
 			<figure>
-                <img src="../imagenes/VSCconGit/2.png"/>
+                <img src="../imagenes/VSCconGit/2.png" alt="Abrir carpeta"/>
             </figure>
 			<p>
 				Esto abrirá su explorador de archivos al directorio actual. Seleccione el directorio de proyecto preferido
@@ -96,7 +102,7 @@
 				A continuación, seleccione <strong>Iniciar repositorio</strong>:
 			</p>
 			<figure>
-                <img src="../imagenes/VSCconGit/3.png"/>
+                <img src="../imagenes/VSCconGit/3.png" alt="Iniciar repositorio"/>
             </figure>
 			<p>
 				Si ahora comprueba su sistema de archivos, verá que incluye un directorio <code>.git</code>. Para hacer esto,
@@ -122,7 +128,7 @@
 				la letra <strong>U</strong> junto a él. <strong>U</strong> significa archivo sin seguimiento (untracked file), lo que significa que es nuevo o se ha cambiado, pero aún no ha sido añadido al repositorio:
 			</p>
 			<figure>
-                <img src="../imagenes/VSCconGit/4.png"/>
+                <img src="../imagenes/VSCconGit/4.png" alt="Letra U"/>
             </figure>
 			<p>
 				Ahora puede hacer clic en el icono <strong>plus</strong> (<strong>+</strong>) junto al listado de archivos
@@ -135,7 +141,7 @@
 				<strong>panel Control de código fuente</strong>. A continuación, haga clic en el icono <strong>check</strong> para realizar la confirmación.
 			</p>
 			<figure>
-                <img src="../imagenes/VSCconGit/5.png"/>
+                <img src="../imagenes/VSCconGit/5.png" alt="Icono check"/>
             </figure>
 			<p>
 				Tras hacerlo, observará que no hay cambios pendientes.
@@ -150,7 +156,7 @@
 				que representa un archivo que se ha modificado.
 			</p>
 			<figure>
-                <img src="../imagenes/VSCconGit/6.png"/>
+                <img src="../imagenes/VSCconGit/6.png" alt="Letra M"/>
             </figure>
 			<p>
 				Para practicar, confirme también este cambio.
@@ -158,7 +164,11 @@
 				Ahora que está familiarizado con la interacción con el panel de código fuente, pasará a interpretar
 				los indicadores de margen.
 			</p>
-			<h3>Paso 2: Interpretar indicadores de margen</h3>
+		</article>
+		<article>
+			<header>
+				<h3>Paso 2: Interpretar indicadores de margen</h3>
+			</header>
 			<p>
 				En este paso, echará un vistazo a lo que se denomina el “margen” en VS Code. El margen es el área
 				muy delgada a la derecha del número de línea.
@@ -179,9 +189,13 @@
 				Este ejemplo muestra indicadores de margen para una línea modificada, una línea eliminada y una nueva línea:
 			</p>
 			<figure>
-                <img src="../imagenes/VSCconGit/7.png"/>
+                <img src="../imagenes/VSCconGit/7.png" alt="Ejemplo 1"/>
             </figure>
-			<h3>Paso 3: Diferenciar archivos</h3>
+        </article>
+        <article>
+        	<header>
+   				<h3>Paso 3: Diferenciar archivos</h3>     		
+        	</header>
 			<p>
 				VS Code también tiene la capacidad de realizar un diff sobre un archivo. Normalmente, tendría que
 				descargar una herramienta diff independiente para hacer esto, de forma que esta función integrada puede
@@ -194,23 +208,27 @@
 				Este ejemplo muestra que se ha añadido una línea en la versión actual:
 			</p>
 			<figure>
-                <img src="../imagenes/VSCconGit/8.png"/>
+                <img src="../imagenes/VSCconGit/8.png" alt="Ejemplo 2"/>
             </figure>
-			<h3>Paso 4: Trabajar con ramas</h3>
+        </article>
+        <article>
+        	<header>
+        		<h3>Paso 4: Trabajar con ramas</h3>
+        	</header>
 			<p>
 				Si se mueve a la barra inferior, tiene la capacidad de crear y cambiar ramas. Si echa un vistazo a la parte
 				inferior izquierda del editor, debería ver el icono <strong>control de código fuente</strong> (el que pareceuna división
 				en la carretera) seguido de probablemente el <code>master</code> o el nombre de la rama actualmente enfuncionamiento.
 			</p>
 			<figure>
-                <img src="../imagenes/VSCconGit/9.png"/>
+                <img src="../imagenes/VSCconGit/9.png" alt="Master"/>
             </figure>
 			<p>
 				Para crear una rama, haga clic en ese nombre de la rama. Debería aparecer un menú que le da la capacidad
 				para crear una nueva rama:
 			</p>
 			<figure>
-                <img src="../imagenes/VSCconGit/10.png"/>
+                <img src="../imagenes/VSCconGit/10.png" alt="Nueva rama"/>
             </figure>
 			<p>
 				Cree una nueva rama llamada <code>test</code>.
