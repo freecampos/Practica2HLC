@@ -6,14 +6,86 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
+html, body{
+	margin: 0px; /*Unir las divisiones a la página web, si no se pone, queda una pequeña separación.*/
+	width: 100%; /*Ancho usado en la pantalla*/
+	min-width: 600px;
+	max-width: 2000px;
+
+	font-family: 'Raleway';
+	font-style: normal;
+  	font-weight: 400;
+}
+
 body li
 {
 	list-style: none;
 }
 
-#header ul a{
-	color: #ffffff; /*Color blanco*/
-	text-decoration: none; /*Quita la barra del texto*/
+#header-framework, #content-framework{
+	width: 95%;
+	max-width: 1000px;
+	margin: auto; /*Centrar todo*/
+}
+
+/* Parrafos con el contenido.*/
+.content-front p{
+	margin-bottom: 20px; /*Espacio entre parrafos*/
+}
+
+/* Menu.*/
+#header-framework nav {
+	background: #3498db;
+	margin-bottom: 10px;
+}
+
+	#header-framework nav ul{
+		list-style: none;
+		overflow: hidden;
+	}
+
+		#header-framework nav ul li{
+			float: left; /*Cada uno a la derecha*/
+		}
+
+			#header-framework nav ul li a{
+				display: block;
+				padding: 20px;
+				color: #fff;
+				text-decoration: none;
+			}
+				#header-framework nav ul li a:hover{
+					background: #2980b9;
+				}
+
+#header-framework h1{
+	padding-top: 20px;
+}
+
+#logoNode{
+	position: fixed;
+	margin: 20px;
+}
+
+code {
+	background-color: #F9D3D2;
+	color: #1C2833;
+	font: bold 90% monospace;
+}
+
+#content-framework{
+	clear: both;
+	display: block;
+	width: 60%; /*Ancho de los elementos hasta la mitad de la pantalla*/
+	margin-bottom: 10px;
+	padding: 10px; /*Separación entre el texto y la linea del input*/
+	border: 0; /*Le quitamos el borde*/
+	background-color: #efefef;
+	/*color: #666666;*/
+}
+/*#header ul a{
+	color: #ffffff; /*Color blanco
+	text-decoration: none; /*Quita la barra del texto
 }
 
 #header ul a:hover{
@@ -22,26 +94,26 @@ body li
 
 #header {
 	background-color: #000000;
-	color: white; /*Color de la letra*/
-	padding: 10px 20px; /*Damos margenes a los textos dentro del id header*/
-	border-radius: 20px; /*Bordeado del Head*/
-	text-align: center; /*Alinemaos al centro el texto*/
+	color: white; /*Color de la letra
+	padding: 10px 20px; /*Damos margenes a los textos dentro del id header
+	border-radius: 20px; /*Bordeado del Head
+	text-align: center; /*Alinemaos al centro el texto
 }
 
 #header h1 {
-	margin: 0; /*Solo quitamos la separación 'padding' al h1 del #header*/
+	margin: 0; /*Solo quitamos la separación 'padding' al h1 del #header
 }
 
 #header ul{
-	list-style: none; /*Quitamos los puntos*/
-	padding: 0; /*Quitamos el padding*/
-	overflow: hidden; /*Ahora el elemento padre, coge correctamente las propiedades del elemento hijo*/
+	list-style: none; /*Quitamos los puntos
+	padding: 0; /*Quitamos el padding
+	overflow: hidden; /*Ahora el elemento padre, coge correctamente las propiedades del elemento hijo
 }
 
 #header li{
-	float: left; /*Flotan los elementos a la izquierda*/
-	margin: 0 15px 0 0; /*Arriba - Derecha - Abajo - Izquierda, solo le damos margen a la derecha de cada elemento*/
-}
+	float: left; /*Flotan los elementos a la izquierda
+	margin: 0 15px 0 0; /*Arriba - Derecha - Abajo - Izquierda, solo le damos margen a la derecha de cada elemento
+}*/
 
 .autor {
 	justify-content: center;
@@ -66,8 +138,9 @@ body li
 }
 
 #Indice{
-	position: sticky;
-	top: 0%;
+	display: flex;
+	position: fixed;
+	top: 15%;
 	width: 200px;
 	height: 250px;
 	border: black 1px solid;
@@ -76,42 +149,42 @@ body li
 	display: inline-block;
 }
 
+#Comentarios{
+	display: flex;
+	position: fixed;
+	right: 0%;
+	top: 15%;
+	width: 400px;
+}
+
 #Introduction{
 	position: relative;
-	left: 50%;
 }
 
 #FirstPoject{
 	position: relative;
-	left: 50%;	
 }
 
 #RunProject{
 	position: relative;
-	left: 50%;
 }
 
 #IntegratedTerminal{
 	position: relative;
-	left: 50%;
 }
 
 #Debugging{
 	position: relative;
-	left: 50%;
 }
 
 #Express{
 	position: relative;
-	left: 50%;
 }
 
 #GreatCode{
 	position: relative;
-	left: 50%;
 }
 
 #DebugExpress{
 	position: relative;
-	left: 50%;	
 }

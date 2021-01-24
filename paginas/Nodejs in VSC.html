@@ -8,49 +8,71 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
 <body>
-	<header id="header">
-        
-		<hgroup>
-			<h1>Use NodeJS into Visual Studio Code</h1>       
-			<h3 class="autor">Daniel Campos</h3>
-			<h3 class="autor">Antonio González</h3>
-			<h3 class="autor">Inma Mesa</h3>
-			<h3 class="autor">Ana Sousa</h3>
+
+	<section id="Comentarios">
+	    <div class="col-md-8 texg-sm-left">
+	        <form>
+	        	<h5>Deja tu Comentario</h5>
+	            <div class="form-group">
+				<label>Nombre</label>
+				<input class="form-control" type="text"  id="name">
+				</div>
+	            <div class="form-group">
+				<label>Comentario</label>
+				<textarea id="comment" class="form-control"></textarea></label>
+				</div>
+				<button type="button" class="btn btn-primary" onclick="commentBox();">Enviar</button>
+	        </form>
+	    </div>	
+	</section>
+
+	<img id="logoNode" src="../imagenes/NodeJS in VSC/1280px-Node.js_logo.svg.png">
+
+	<header id="header-framework">
+    	<hgroup>
+			<h1>Usar NodeJS con Visual Studio Code</h1>       
+			<h6 class="autor">Antonio González</h6>
 		</hgroup>
 		
 		<nav>
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="installation.html">How to install Docker</a></li>
-				<li><a href="videos.html">Videos</a></li>
+				<li><a href="VisualStudioCode.html">Inicio</a></li>
+				<li><a href="VSCconGit.html">VSC con Git</a></li>
+				<li><a href="Nodejs in VSC.html">NodeJS</a></li>
+				<li><a href="developers-tools.html">Developers Tools</a></li>
+				<li><a href="framework-js.html">Framework JS</a></li>
+				<li><a href="framework-web.html">Framework Web</a></li>
+				<li><a href="contact.html">Contáctame</a></li>
 			</ul>
 		</nav>   
             
 	</header>
+
 	
-	<section id="content">
-		
-		<section id="Indice">
-			<h3>Indice</h3>
-			<ul>
-				<li><a href="#FirstPoject">First Poject</a></li>
-				<li><a href="#RunProject">Run Project</a></li>
-				<li><a href="#IntegratedTerminal">Integrated Terminal</a></li>
-				<li><a href="#Debugging">Debugging Project</a></li>
-				<li><a href="#Express">Express Application</a></li>
-				<li><a href="#GreatCode">Great Code Editing</a></li>
-				<li><a href="#DebugExpress">Debug your Express app</a></li>
-			</ul>
-		</section>
+
+	<section id="Indice">
+		<h3>Indice</h3>
+		<ul>
+			<li><a href="#FirstPoject">Primer Proyecto</a></li>
+			<li><a href="#RunProject">Ejecutar Proyecto</a></li>
+			<li><a href="#IntegratedTerminal">Terminal Integrada</a></li>
+			<li><a href="#Debugging">Depurar Proyecto</a></li>
+			<li><a href="#Express">Aplicacion Express</a></li>
+			<li><a href="#GreatCode">Buena Edicion de Codigo</a></li>
+			<li><a href="#DebugExpress">Depurar app Express</a></li>
+		</ul>
+	</section>
+
+	<section id="content-framework">
 
 		<section id="Introduction">
-			<h2>How to use NodeJS in VSCs</h2>
+			<h2>Como usar NodeJS en VSC</h2>
 			<p>
 				Node.js is a platform for building fast and scalable server applications using JavaScript. Node.js is the runtime and npm is the Package Manager for Node.js modules.
 				<br><br>
 				Visual Studio Code has support for the JavaScript and TypeScript languages out-of-the-box as well as Node.js debugging. However, to run a Node.js application, you will need to install the Node.js runtime on your machine.
 				<br><br>
-				To get started in this walkthrough, <a href="https://nodejs.org/en/download/">install Node.js for your platform.</a> The Node Package Manager is included in the Node.js distribution. You'll need to open a new terminal (command prompt) for the node and npm command-line tools to be on your PATH.
+				To get started in this walkthrough, <a href="https://nodejs.org/en/download/">install Node.js for your platform.</a> The Node Package Manager is included in the Node.js distribution. You'll need to open a new terminal (command prompt) for the <code>node</code> and <code>npm</code> command-line tools to be on your PATH.
 			</p>
 		</section>
 
@@ -81,9 +103,9 @@
 			<img src="../imagenes/NodeJS in VSC/app-js-file-created.png">	
 
 			<p>
-				By using the .js file extension, VS Code interprets this file as JavaScript and will evaluate the contents with the JavaScript language service. Refer to the VS Code JavaScript language topic to learn more about JavaScript support.
+				By using the <code>.js</code> file extension, VS Code interprets this file as JavaScript and will evaluate the contents with the JavaScript language service. Refer to the VS Code JavaScript language topic to learn more about JavaScript support.
 				<br><br>
-				Create a simple string variable in app.js and send the contents of the string to the console:
+				Create a simple string variable in <code>app.js</code> and send the contents of the string to the console:
 			</p>
 
 			<table id="comando">
@@ -93,26 +115,26 @@
 			</table>
 
 			<p>
-				Note that when you typed console. <a href="https://code.visualstudio.com/docs/editor/intellisense">IntelliSense</a> on the console object was automatically presented to you.
+				Note that when you typed <code>console.</code> <a href="https://code.visualstudio.com/docs/editor/intellisense">IntelliSense</a> on the <code>console</code> object was automatically presented to you.
 			</p>
 
 			<img src="../imagenes/NodeJS in VSC/consoleintellisense.png">
 
 			<p>
-				Also notice that VS Code knows that msg is a string based on the initialization to 'Hello World'. If you type msg. you'll see IntelliSense showing all of the string functions available on msg.
+				Also notice that VS Code knows that <code>msg</code> is a string based on the initialization to <code>'Hello World'</code>. If you type <code>msg.</code> you'll see IntelliSense showing all of the string functions available on <code>msg</code>.
 			</p>
 
 			<img src="../imagenes/NodeJS in VSC/stringintellisense.png">
 
 			<p>
-				After experimenting with IntelliSense, revert any extra changes from the source code example above and save the file (Ctrl+S).
+				After experimenting with IntelliSense, revert any extra changes from the source code example above and save the file <code>(Ctrl+S)</code>.
 			</p>
 		</section>
 
 		<section id="RunProject">
 			<h3>Run Project</h3>
 
-			<p>It's simple to run app.js with Node.js. From a terminal, just type:</p>
+			<p>It's simple to run <code>app.js</code> with Node.js. From a terminal, just type:</p>
 
 			<table id="comando">
 				<tr>
@@ -129,7 +151,7 @@
 			<p>
 				VSC has an <a href="https://code.visualstudio.com/docs/editor/integrated-terminal"> integrated terminal </a> which you can use to run shell commands. You can run Node.js directly from there and avoid switching out of VS Code while running command-line tools.
 				<br><br>
-				View > Terminal (Ctrl+` with the backtick character) will open the integrated terminal and you can run node app.js there:
+				View > Terminal (<code>Ctrl+`</code> with the backtick character) will open the integrated terminal and you can run <code>node app.js</code> there:
 			</p>
 
 			<img src="../imagenes/NodeJS in VSC/integrated-terminal.png">
@@ -146,7 +168,7 @@
 			<p>
 				As mentioned in the introduction, VS Code ships with a debugger for Node.js applications. Let's try debugging our simple Hello World application.
 				<br><br>
-				To set a breakpoint in app.js, put the editor cursor on the first line and press F9 or click in the editor left gutter next to the line numbers. A red circle will appear in the gutter.
+				To set a breakpoint in <code>app.js</code>, put the editor cursor on the first line and press <code>F9</code> or click in the editor left gutter next to the line numbers. A red circle will appear in the gutter.
 			</p>
 
 			<img src="../imagenes/NodeJS in VSC/app-js-breakpoint-set.png">
@@ -159,7 +181,7 @@
 
 			<p>
 				<br>
-				You can now click Debug toolbar green arrow or press F5 to launch and debug "Hello World". Your breakpoint will be hit and you can view and step through the simple application. Notice that VS Code displays a different colored Status Bar to indicate it is in Debug mode and the DEBUG CONSOLE is displayed.
+				You can now click Debug toolbar green arrow or press <code>F5</code> to launch and debug "Hello World". Your breakpoint will be hit and you can view and step through the simple application. Notice that VS Code displays a different colored Status Bar to indicate it is in Debug mode and the DEBUG CONSOLE is displayed.
 			</p>
 
 			<img id="debuImage" src="../imagenes/NodeJS in VSC/hello-world-debugging.png">
@@ -173,7 +195,7 @@
 			<h3>Express Application</h3>
 
 			<p>
-				Express is a very popular application framework for building and running Node.js applications. You can scaffold (create) a new Express application using the Express Generator tool. The Express Generator is shipped as an npm module and installed by using the npm command-line tool npm.
+				Express is a very popular application framework for building and running Node.js applications. You can scaffold (create) a new Express application using the Express Generator tool. The Express Generator is shipped as an npm module and installed by using the npm command-line tool <code>npm</code>.
 				<br><br>
 				Install the Express Generator by running the following from a terminal:
 			</p>
@@ -185,9 +207,9 @@
 			</table>
 
 			<p>
-				<br>The -g switch installs the Express Generator globally on your machine so you can run it from anywhere.
+				<br>The <code>-g</code> switch installs the Express Generator globally on your machine so you can run it from anywhere.
 				<br><br>
-				We can now scaffold a new Express application called myExpressApp by running:
+				We can now scaffold a new Express application called <code>myExpressApp</code> by running:
 			</p>
 
 			<table id="comando">
@@ -197,9 +219,9 @@
 			</table>
 
 			<p>
-				<br>This creates a new folder called myExpressApp with the contents of your application. The --view pug parameters tell the generator to use the pug template engine.
+				<br>This creates a new folder called <code>myExpressApp</code> with the contents of your application. The <code>--view pug</code> parameters tell the generator to use the pug template engine.
 				<br><br>
-				To install all of the application's dependencies (again shipped as npm modules), go to the new folder and execute npm install:
+				To install all of the application's dependencies (again shipped as npm modules), go to the new folder and execute <code>npm install</code>:
 
 			</p>
 
@@ -210,7 +232,7 @@
 			</table>
 
 			<p>
-				<br>At this point, we should test that our application runs. The generated Express application has a package.json file which includes a start script to run node ./bin/www. This will start the Node.js application running.
+				<br>At this point, we should test that our application runs. The generated Express application has a <code>package.json</code> file which includes a <code>start</code> script to run <code>node ./bin/www</code>. This will start the Node.js application running.
 				<br><br>
 				From a terminal in the Express application folder, run:
 			</p>
@@ -233,7 +255,7 @@
 			<h3>Great Code Editing</h3>
 
 			<p>
-				<br>Close the browser and from a terminal in the myExpressApp folder, stop the Node.js server by pressing CTRL+C.
+				<br>Close the browser and from a terminal in the <code>myExpressApp</code> folder, stop the Node.js server by pressing <code>CTRL+C</code>.
 				<br><br>
 				Now launch VS Code:
 			</p>
@@ -247,15 +269,15 @@
 			<p>
 				<br>The <a href="https://nodejs.org/api/"> Node.js </a> and <a href="http://expressjs.com/en/api.html"> Express </a> documentation does a great job explaining how to build rich applications using the platform and framework. Visual Studio Code will make you more productive in developing these types of applications by providing great code editing and navigation experiences.
 				<br><br>
-				Open the file app.js and hover over the Node.js global object __dirname. Notice how VS Code understands that __dirname is a string. Even more interesting, you can get full IntelliSense against the Node.js framework. For example, you can require http and get full IntelliSense against the http class as you type in Visual Studio Code.
+				Open the file <code>app.js</code> and hover over the Node.js global object <code>__dirname</code>. Notice how VS Code understands that <code>__dirname</code> is a string. Even more interesting, you can get full IntelliSense against the Node.js framework. For example, you can require <code>http</code> and get full IntelliSense against the http class as you type in Visual Studio Code.
 			</p>
 
 			<img src="../imagenes/NodeJS in VSC/intellisense.png">
 
 			<p>
-				<br>VS Code uses TypeScript type declaration (typings) files (for example node.d.ts) to provide metadata to VS Code about the JavaScript based frameworks you are consuming in your application. Type declaration files are written in TypeScript so they can express the data types of parameters and functions, allowing VS Code to provide a rich IntelliSense experience. Thanks to a feature called Automatic Type Acquisition, you do not have to worry about downloading these type declaration files, VS Code will install them automatically for you.
+				<br>VS Code uses TypeScript type declaration (typings) files (for example <code>node.d.ts</code>) to provide metadata to VS Code about the JavaScript based frameworks you are consuming in your application. Type declaration files are written in TypeScript so they can express the data types of parameters and functions, allowing VS Code to provide a rich IntelliSense experience. Thanks to a feature called <code>Automatic Type Acquisition</code>, you do not have to worry about downloading these type declaration files, VS Code will install them automatically for you.
 				<br><br>
-				You can also write code that references modules in other files. For example, in app.js we require the ./routes/index module, which exports an Express.Router class. If you bring up IntelliSense on index, you can see the shape of the Router class.
+				You can also write code that references modules in other files. For example, in app.js we require the <code>./routes/index</code> module, which exports an <code>Express.Router</code> class. If you bring up IntelliSense on <code>index</code>, you can see the shape of the <code>Router</code> class.
 			</p>
 
 			<img src="../imagenes/NodeJS in VSC/moduleintellisense.png">
@@ -266,7 +288,7 @@
 			<h3>Debug your Express app</h3>
 
 			<p>
-				<br>You will need to create a debugger configuration file launch.json for your Express application. Click on the Run icon in the Activity Bar and then the Configure gear icon at the top of the Run view to create a default launch.json file. Select the Node.js environment by ensuring that the type property in configurations is set to "node". When the file is first created, VS Code will look in package.json for a start script and will use that value as the program (which in this case is "${workspaceFolder}\\bin\\www) for the Launch Program configuration.
+				<br>You will need to create a debugger configuration file <code>launch.json</code> for your Express application. Click on the Run icon in the Activity Bar and then the Configure gear icon at the top of the Run view to create a default <code>launch.json</code> file. Select the Node.js environment by ensuring that the <code>type</code> property in <code>configurations</code> is set to <code>"node"</code>. When the file is first created, VS Code will look in <code>package.json</code> for a <code>start</code> script and will use that value as the <code>program</code> (which in this case is <code>"${workspaceFolder}\\bin\\www</code>) for the Launch Program configuration.
 			</p>
 
 			<table id="comando">
@@ -287,19 +309,22 @@
 			</table>
 
 			<p>
-				<br>Save the new file and make sure Launch Program is selected in the configuration drop-down at the top of the Run view. Open app.js and set a breakpoint near the top of the file where the Express app object is created by clicking in the gutter to the left of the line number. Press F5 to start debugging the application. VS Code will start the server in a new terminal and hit the breakpoint we set. From there you can inspect variables, create watches, and step through your code.
+				<br>Save the new file and make sure Launch Program is selected in the configuration drop-down at the top of the Run view. Open <code>app.js</code> and set a breakpoint near the top of the file where the Express app object is created by clicking in the gutter to the left of the line number. Press <code>F5</code> to start debugging the application. VS Code will start the server in a new terminal and hit the breakpoint we set. From there you can inspect variables, create watches, and step through your code.
 			</p>
 
 			<img src="../imagenes/NodeJS in VSC/debugsession.png">
 		</section>
-
 	</section>
+
+
+
 	<aside>
 		<footer id="final">
 			<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Web bajo licencia Creative Commons</a>
 		</footer>
 	</aside>
 
+	<script src="../scripts/NodeJS in VSC.js" type="text/JavaScript"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
