@@ -5,9 +5,11 @@
 	<title>Developers tools</title>
 	<link rel="stylesheet" type="text/css" href="../estilos/styles.css"/>
 	<link rel="shortcut icon" href="../imagenes/logo.jpg"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="../scripts/Git-DevTools.js" type="text/javascript"></script>
 </head>
-<body>
-	<header id="header">
+<body onload="mostrarFechaYHora()">
+	<header id="header-framework">
         
 		<hgroup>
 			<h1>Práctica 2 de HLC</h1>
@@ -17,9 +19,9 @@
 		<nav>
 			<ul>
 				<li><a href="index.html">Inicio</a></li>
-				<li><a href="VisualStudioCode.html">Visual Studio Code para JavaScript</a></li>
+				<li><a href="VisualStudioCode.html">VSC para JavaScript</a></li>
 				<li><a href="VSCconGit.html">VSC con Git</a></li>
-				<li><a href="Nodejs in VSC.html">NodeJS en VSC</a></li>
+				<li><a href="Nodejs in VSC.html">NodeJS</a></li>
 				<li><a href="DevelopersTools.html">Developers tools</a></li>
 				<li><a href="framework-js.html">Framework JS</a></li>
 				<li><a href="framework-web.html">Framework Web</a></li>
@@ -29,8 +31,13 @@
             
 	</header>
 	
-	<section id="content">
-		<h2>Firefox Developer Edition</h2>
+	<section id="content-framework">
+        <form name="form_fecha_hora">
+            <input type="text" name="fecha_hora" size="10">
+        </form>
+        <figure>
+            <img id="logo" src="../imagenes/DevelopersTools/firefox.png" alt="Firefox" align="left" width="5%" height="5%"><h2>Firefox Developer Edition</h2></img>
+        </figure>
 		<article>
 			<p>
 				Firefox Developer Edition es una versión de Firefox adaptada para desarrolladores, ofreciendo las últimas características y herramientas de desarrollo experimental.
@@ -121,7 +128,9 @@
 			</ul>
 		</article>
 
-		<h2>Chrome DevTools</h2>
+        <figure>
+            <img id="logo" src="../imagenes/DevelopersTools/chrome.jpg" alt="Firefox" align="left" width="5%" height="5%"><h2>Chrome DevTools</h2></img>
+        </figure>
 		<article>
 			<header>
 				<h3>Abrir Chrome DevTools</h3>

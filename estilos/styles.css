@@ -107,6 +107,11 @@ code {
 	color: #1C2833;
 }
 
+#logo {
+	float: left;
+	margin-right: 20px;
+}
+
 #content a{
 	color: blue;
 	text-decoration: none; /*Quita la barra del texto*/
