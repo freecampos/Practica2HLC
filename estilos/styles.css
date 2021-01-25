@@ -108,9 +108,22 @@ code {
 	color: #1C2833;
 }
 
-#logo {
+.comando{
+	width: 600px;
+	height: 50px;
+	border: black 1px solid;
+	border-radius: 5px;
+}
+
+.comando td{
+	font: bold 90% monospace;
+}
+
+.logo {
 	float: left;
 	margin-right: 20px;
+	width: 5%;
+	height: 5%;
 }
 
 #content a{

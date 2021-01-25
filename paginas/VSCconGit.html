@@ -6,8 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="../estilos/styles.css"/>
 	<link rel="shortcut icon" href="../imagenes/logo.jpg"/>
 	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-	<script src="../scripts/Git-DevTools.js" type="text/javascript"></script>
-	<script src="../scripts/menu.js" type="text/javascript"></script>
+	<script src="../scripts/Git-DevTools.js"></script>
+	<script src="../scripts/menu.js"></script>
 </head>
 <body onload="mostrarFechaYHora()">
 	<header id="header-framework">
@@ -74,7 +74,7 @@
 				<br/><br/>
 				En su terminal, cree un directorio para un nuevo proyecto y cambie a ese directorio:
 			</p>
-			<table id="comando">
+			<table class="comando">
 				<tr>
 					<td>mkdir git_test<br/>cd git_test</td>
 				</tr>
@@ -82,7 +82,7 @@
 			<p>
 				A continuación, cree un repositorio Git:
 			</p>
-			<table id="comando">
+			<table class="comando">
 				<tr>
 					<td>git init</td>
 				</tr>
@@ -113,7 +113,7 @@
 				Si ahora comprueba su sistema de archivos, verá que incluye un directorio <code>.git</code>. Para hacer esto,
 				use el terminal para navegar al directorio de su proyecto y liste todo su contenido:
 			</p>
-			<table id="comando">
+			<table class="comando">
 				<tr>
 					<td>ls -la</td>
 				</tr>
@@ -121,7 +121,7 @@
 			<p>
 				Verá el directorio .git que se creó:
 			</p>
-			<table id="comando">
+			<table class="comando">
 				<tr>
 					<td>.<br/>..<br/>.git</td>
 				</tr>
