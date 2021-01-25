@@ -6,6 +6,30 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
+@media screen and (max-width:980px){
+	#contenedor{
+		width: 90%;
+	}
+	#contenido{
+		width: 60%;
+	}
+	#barra-_lateral{
+		width: 30%;
+	}
+}
+
+@media screen and (max-width:480px){
+	#encabezado{
+		height: auto;
+	}
+	#contenido{
+		width: auto;
+	}
+	#barra-_lateral{
+		display: none;
+	}
+}
+
 html, body{
 	margin: 0px; /*Unir las divisiones a la página web, si no se pone, queda una pequeña separación.*/
 	width: 100%; /*Ancho usado en la pantalla*/
@@ -18,29 +42,6 @@ html, body{
 }
 
 /*# -> hace referencia al identificar usado en los .html*/
-#header {
-	background-color: #000000;
-	color: white; /*Color de la letra*/
-	padding: 10px 20px; /*Damos margenes a los textos dentro del id header*/
-	border-radius: 20px; /*Bordeado del Head*/
-	text-align: center; /*Alinemaos al centro el texto*/
-}
-
-#header h1 {
-	margin: 0; /*Solo quitamos la separación 'padding' al h1 del #header*/
-}
-
-#header ul{
-	list-style: none; /*Quitamos los puntos*/
-	padding: 0; /*Quitamos el padding*/
-	overflow: hidden; /*Ahora el elemento padre, coge correctamente las propiedades del elemento hijo*/
-}
-
-#header li{
-	float: left; /*Flotan los elementos a la izquierda*/
-	margin: 0 15px 0 0; /*Arriba - Derecha - Abajo - Izquierda, solo le damos margen a la derecha de cada elemento*/
-}
-
 .autor {
 	justify-content: center;
 	display: inline-block;
