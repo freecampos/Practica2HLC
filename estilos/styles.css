@@ -7,25 +7,25 @@
 }
 
 @media screen and (max-width:980px){
-	#contenedor{
+	#header-framework{
 		width: 90%;
 	}
-	#contenido{
+	#content-framework{
 		width: 60%;
 	}
-	#barra-_lateral{
+	##header-framework nav{
 		width: 30%;
 	}
 }
 
 @media screen and (max-width:480px){
-	#encabezado{
+	#header-framework{
 		height: auto;
 	}
-	#contenido{
+	#content-framework{
 		width: auto;
 	}
-	#barra-_lateral{
+	#header-framework nav{
 		display: none;
 	}
 }
@@ -47,60 +47,6 @@ html, body{
 	display: inline-block;
 	padding: 0 20px 0 0;
 }
-
-#content {
-	padding: 20px; /*Le damos borde al contenido*/
-}
-
-/*Etiquetas del menu*/
-#header ul a{
-	color: #ffffff; /*Color blanco*/
-	text-decoration: none; /*Quita la barra del texto*/
-}
-
-/*Color del texto del menu cuando se pasa el mouse por encima*/
-#header ul a:hover{
-	color: #ff9999;
-}
-
-/*Para el formulario de Contácteme*/
-/*Solo lo aplicamos a los type text y email*/
-
-#content form {
-	clear: both; /*Que no haya nada ni a la izq ni a la derecha*/
-}
-#content form [type="text"], #content form [type="email"],#content form textarea {
-	display: block;
-	width: 50%; /*Ancho de los elementos hasta la mitad de la pantalla*/
-	margin-bottom: 10px;
-	padding: 10px; /*Separación entre el texto y la linea del input*/
-	border: 0; /*Le quitamos el borde*/
-	background-color: #efefef;
-	color: #666666;
-}
-
-/*Propiedades de la tabla*/
-/content table{
-	background-color: #ccc;
-	text-align: center;
-}
-
-
-/*esto solo afecta a las filas pares*/
-/* even -> pared, odd -> impares
-#content table tr:nth-child(even){
-	background-color: #efefef;
-}
-
-#content table tr:nth-child(odd){
-	background-color: #D18B00;
-}
-
-/* '*' ->Afecta a todos los elementos del tr, '>' ->  
-#content table tr > * {
-	padding: 3px 10px;
-	border-bottom: 1px solid #666;
-}*/
 
 /*EDITADO POR ANA SOUSA CABANILLA*/
 code {
