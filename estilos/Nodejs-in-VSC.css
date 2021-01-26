@@ -66,6 +66,11 @@ body li
 	padding-top: 20px;
 }
 
+#logoNode{
+	position: fixed;
+	margin: 20px;
+}
+
 code {
 	background-color: #F9D3D2;
 	color: #1C2833;
@@ -89,20 +94,40 @@ code {
 	padding: 0 20px 0 0;
 }
 
-/*#content{
+#content{
 	width: 600px;
 	text-align: left;
-}*/
+}
 /*propiedades de la tabla donde va el codigo*/
-.comando{
+#comando{
 	width: 600px;
 	height: 50px;
 	border: black 1px solid;
 	border-radius: 5px;
 }
 
-.comando td{
+#comando td{
 	font: bold 90% monospace;
+}
+
+#Indice{
+	position: fixed;
+	/*float: left;*/
+	top: 15%;
+	width: 200px;
+	height: 250px;
+	border: black 1px solid;
+	border-radius: 5px;
+	margin: 20px;	
+	display: inline-block;
+}
+
+#Comentarios{
+	display: flex;
+	position: fixed;
+	right: 0%;
+	top: 15%;
+	width: 400px;
 }
 
 #Introduction{
